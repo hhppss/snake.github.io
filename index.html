@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Змейка</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Open+Sans&display=swap" rel="stylesheet">
+    <script src="js/script.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <section class="header">
+        <div class="container">
+          <div class="row">
+              <div class="col-md-5">
+                  <div class="header-logo">
+                    <h1><a href="index.html">Snake game</a></h1>
+                  </div>
+              </div>
+            <div class="col-md-7">	
+              <div class="header-hamburger">
+                  <input id="menu__toggle" type="checkbox" />
+                  <label class="menu__btn" for="menu__toggle">
+                      <span></span>
+                  </label>
+                  <ul class="header-navbar">
+                    <li><a href="#download">Скачать</a></li>
+                    <li><a href="#canon">Правила</a></li>
+                    <li><a href="#feedback">Отзывы</a></li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+          <div class="header-block">
+            <div class="row">
+                <div class="col-md-4">
+                  <p>Наверняка вы слышали про самую легендарную игру "Змейка", ее геймплей великолепен, динамичен и реалистичен. Вся современная игровая индустрия копирует все с игры "Змейка": Grand Theft Auto, Apex, World Of Tanks. Спешите играть в самую легендарную игру всех времен.</p>
+                </div>
+                <div class="col-md-6  offset-md-2">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/kZr8sR9Gwag" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+    <section class="info">
+        <div class="container">
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <h2>Об игре</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-4">
+                <div class="info-text">
+                  <p>Snake (Питон, Удав, Змейка и др.) — компьютерная игра, возникшая в середине или в конце 1970-х.</p>
+                  <p>Игрок управляет длинным, тонким существом, напоминающим змею, которое ползает по плоскости (как правило, ограниченной стенками), собирая еду (или другие предметы), избегая столкновения с собственным хвостом и краями игрового поля. В некоторых вариантах на поле присутствуют дополнительные препятствия. Каждый раз, когда змея съедает кусок пищи, она становится длиннее, что постепенно усложняет игру. Игрок управляет направлением движения головы змеи (обычно 4 направления: вверх, вниз, влево, вправо), а хвост змеи движется следом. Игрок не может остановить движение змеи.</p>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-8">
+                <div class="info-slider">
+                  <div class="info-slider__item">
+                    <img src="img/snake1.png" alt="Snake1">
+                  </div>
+                  <div class="info-slider__item">
+                    <img src="img/snake2.png" alt="Snake2">
+                  </div>
+                  <div class="info-slider__item">
+                    <img src="img/snake3.png" alt="Snake3">
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+    <section class="feedback" id="feedback">
+      <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="text-center feedback-text">
+                    Отзывы
+                </h2>
+            </div>
+            <div class="col-md-6 offset-md-3">
+                <div id="comment-field"></div>
+            </div>
+            <div class="col-md-6 offset-md-3">
+                    <form class="feedback-form">
+                            <div class="form-group">
+                              <label for="comment-name">Ваше святейшее имя:</label>
+                              <input type="email" class="form-control" id="comment-name"  placeholder="Введи свое имя, святейший.">
+                            </div>
+                            <div class="form-group">
+                              <label for="comment-body">Ваш приподобный отзыв:</label>
+                              <textarea type="password" class="form-control" id="comment-body" placeholder="Введи славный отзыв"></textarea>
+                            </div>
+                            <div class="form-group form-check text-right">
+                                    <button type="submit" id="comment-add" class="btn btn-primary">Отправить</button>
+                            </div>
+                          </form>
+            </div>
+        </div>
+    </section>
+    <section class="canon" id="canon">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="text-center">Правила</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 text-center">
+            <img src="img/snake-canon.jpg" alt="">
+          </div>
+          <div class="col-md-6">
+              <p class="canon-text">
+                  Игрок управляет длинным, тонким существом, напоминающим змею, которое ползает по плоскости (как правило, ограниченной стенками), собирая еду (или другие предметы), избегая столкновения с собственным хвостом и краями игрового поля. Каждый раз, когда змея съедает кусок пищи, она становится длиннее, что постепенно усложняет игру. Игрок управляет направлением движения головы змеи (обычно 4 направления: вверх, вниз, влево, вправо), а хвост змеи движется следом. Игрок не может остановить движение змеи.
+              </p>
+            </div>
+        </div>
+      </div>
+    </section>
+    <section class="download" id="download">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="download-text text-center">
+              <h2>Скачать игру</h2>
+            </div>
+          </div>
+        </div>
+        <div class="download-block__phone">
+            <div class="row">
+              <div class="col-md-6">
+                  <div class="download-yandex">
+                    <a href="https://yadi.sk/d/PPBtPVukDVca8g" class="download-yandex__btn">Скачать с Яндекс.Диск</a>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="download-src">
+                    <input class="download-src__btn" type="button" onclick="location.href='file.txt';" value="Скачать c сервера" />
+                  </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="b-container">
+          <a href="javascript:PopUpShow()">Скачать игру</a>
+      </div>
+      <div class="b-popup" id="popup1">
+          <div class="b-popup-content">
+              <div class="b-popup-cont text-center">
+                  <script src="//megatimer.ru/get/3a96c874ca5f7e288df12a91dc130eb0.js"></script>
+                    <div class="download-block">
+                        <div class="row">
+                          <div class="col-md-6">
+                              <div class="download-yandex">
+                                <a href="https://yadi.sk/d/PPBtPVukDVca8g" class="download-yandex__btn">Скачать с Яндекс.Диск</a>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="download-src">
+                                  <input class="download-src__btn" type="button" onclick="location.href='file.txt';" value="Скачать c сервера" />
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                  <a href="javascript:PopUpHide()">Скрыть</a>
+              </div>
+          </div>
+      </div>
+    </section>
+    <section class="popup">
+        
+    </section>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script>
+      $('.info-slider').slick();
+    </script>
+    <script>
+        $(document).ready(function(){
+        PopUpHide();
+        });
+        function PopUpShow(){
+            $("#popup1").show();
+        }
+        function PopUpHide(){
+            $("#popup1").hide();
+        }
+
+
+        let comments = [];
+        loadComments();
+
+        document.getElementById('comment-add').onclick = function(){
+            let commentName = document.getElementById('comment-name');
+            let commentBody = document.getElementById('comment-body');
+
+            let comment = {
+                name : commentName.value,
+                body : commentBody.value,
+                time : Math.floor(Date.now() / 1000)
+            }
+
+            commentName.value = '';
+            commentBody.value = '';
+
+            comments.push(comment);
+            saveComments();
+            showComments();
+        }
+
+        function saveComments(){
+            localStorage.setItem('comments', JSON.stringify(comments));
+        }
+
+        function loadComments(){
+            if (localStorage.getItem('comments')) comments = JSON.parse(localStorage.getItem('comments'));
+            showComments();
+        }
+
+        function showComments (){
+            let commentField = document.getElementById('comment-field');
+            let out = '';
+            comments.forEach(function(item){
+                out += `<p class="text-right small"><em>${timeConverter(item.time)}</em></p>`;
+                out += `<p class="alert alert-primary" role="alert">${item.name}</p>`;
+                out += `<p class="alert alert-success" role="alert">${item.body}</p>`;
+            });
+            commentField.innerHTML = out;
+        }
+
+        function timeConverter(UNIX_timestamp){
+            var a = new Date(UNIX_timestamp * 1000);
+            var months = ['Януар','Фебрар','Март','Април','Май','Джюн','Джюль','Аугуст','Септембер','Октембер','Номембер','Дезембр'];
+            var year = a.getFullYear();
+            var month = months[a.getMonth()];
+            var date = a.getDate();
+            var hour = a.getHours();
+            var min = a.getMinutes();
+            var sec = a.getSeconds();
+            var time = date + ' ' + month + ' ' + year + ' ' + hour + ':' + min + ':' + sec ;
+            return time;
+        }
+    </script>
+</body>
+</html>
